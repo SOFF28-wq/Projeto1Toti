@@ -1,0 +1,56 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Color de fondo general */
+    color: #333; /* Color de texto general */
+}
+
+header, footer {
+    background-color: #343a40; /* Color de fondo de cabecera y pie de página */
+    color: white; /* Color de texto en cabecera y pie de página */
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas responsivas */
+    gap: 20px; /* Espacio entre las secciones */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para las secciones */
+.grid-container > div {
+    background-color: #ffffff; /* Color de fondo de las secciones */
+    padding: 20px;
+    border: 1px solid #dee2e6; /* Borde de las secciones */
+    border-radius: 8px; /* Borde redondeado */
+}
+
+.grid-container > div > div {
+    line-height: 1.6;
+}
+
+h2 {
+    color: #007bff; /* Color de título */
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/* Media query para ajustes en dispositivos móviles */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Una columna en dispositivos pequeños */
+    }
+}
